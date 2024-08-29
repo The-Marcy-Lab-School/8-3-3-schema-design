@@ -4,18 +4,11 @@
 
 In other words, it is all about designing the tables in our database.
 
-A well-designed database schema ensures:
-* data consistency
-* minimizes redundancy
-* improves performance
-
-Database schema designs are most often communicated through an **Entity Relationship Diagram**
-
-![](./img/labeled-erd.png)
-
 In this lesson, we'll practice designing a database and use dbdiagram.io to create an ERD.
 
 **Table of Contents**:
+- [Terms](#terms)
+- [Why is schema design important?](#why-is-schema-design-important)
 - [Steps For Designing A Database](#steps-for-designing-a-database)
 - [Database Markup Language](#database-markup-language)
   - [Step 1 - Identify Tables](#step-1---identify-tables)
@@ -25,6 +18,31 @@ In this lesson, we'll practice designing a database and use dbdiagram.io to crea
 - [Step 4 - Normalizing Tables](#step-4---normalizing-tables)
   - [First Normal Form (1NF)](#first-normal-form-1nf)
   - [Second Normal Form (2NF)](#second-normal-form-2nf)
+
+## Terms
+
+* **Schema Design** - the process of organizing and structuring how data is stored in a database so it can be efficiently stored, retrieved, and updated.
+* **ERD (Entity Relationship Diagram)** - a visual representation of the contents of each entity (a.k.a. "table") in your database as well as the relationships between entities.
+* **DBML (Database Markup Language)** - a language used to generate ERDs by tools like [dbdiagram.io](https://dbdiagram.io/home)
+* **Normal Forms** - a series of guidelines to help achieve a well-structured and efficient database schema.
+* **Normalization** - the process of organizing data in a database to eliminate redundancy and inconsistent dependencies.
+
+## Why is schema design important?
+
+A well-designed database schema ensures:
+* data consistency
+* minimized redundancy
+* improved performance
+
+Database schema designs are most often communicated through an **Entity Relationship Diagram**
+
+![](./img/labeled-erd.png)
+
+**<details><summary style="color: purple">Q: Why is having a diagram like this helpful for building software?</summary>**
+> A diagram allows all engineers working on a project to have a clear picture of the data required by the project and the relationships between that data. Even if you are working on a solo project, making this kind of plan before starting coding can help you avoid making mistakes along the way! And remember, you can always change things around later.
+</details><br>
+
+So, how do we get from an idea to an ERD like this?
 
 ## Steps For Designing A Database
 
